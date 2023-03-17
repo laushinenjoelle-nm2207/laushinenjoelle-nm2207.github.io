@@ -1,0 +1,46 @@
+body{
+    background-image: url(resources/bg.png);
+    background-size:cover;
+    background-repeat: no-repeat;
+
+}
+
+#food{
+    width:200px;
+    height:200px;
+    position:relative;
+    left: 780px;
+    top:230px;
+    background-image: url("resources/bbt.svg");
+    background-size: contain;
+    background-position: center;
+    overflow:hidden;
+    background-repeat: no-repeat;
+    opacity: 100%;
+}
+
+#bbtButton{
+    position:relative;
+    right:400px;
+    top:100px;
+    padding:40px;
+    background-image: url("resources/bbtButton.svg");
+    background-color: none;
+    background-position: center;
+    border: none;
+    background-size:contain;
+    background-repeat: no-repeat;
+}
+
+#kayaButton{
+    position:relative;
+    right:510px;
+    top:20px;
+    padding:40px;
+    background-image: url("resources/kayaButton.svg");
+    background-color: none;
+    background-position: center;
+    border: none;
+    background-size:contain;
+    background-repeat: no-repeat;
+}

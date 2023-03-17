@@ -1,0 +1,115 @@
+html, body {
+    height:100%;
+    width:100%;
+    background-color: #70CCD8;
+    color: aliceblue;
+  }
+  .container {
+    font-family: Helvetica, Arial, sans-serif;
+    height:98%;
+    width:98%;
+    border-color: #111;
+    border-width: 2px;
+  }
+  
+  .container > * {
+    background-color: none;
+    padding: 20px;
+    border-color: #111;
+  }
+  
+  /* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
+  .content {
+    min-height: 40%;
+    overflow-y: scroll;
+    margin-right: 20px;
+    background-color: none;
+    border-radius: 10px;
+
+  }
+  
+  /* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
+  /* Select all elements where parent is a container */
+  .container > * {
+    margin-bottom: 2%;
+  }
+  
+  /* Now let's apply grid for wider viewports. */
+  @media screen and (min-width: 40em) {
+    .container > * {
+      margin-bottom: 0;
+      border-radius: 10px;
+     /*border:2px #111 solid;*/
+    }
+    /* Define the grid */
+    .container {
+      display:grid;
+      grid-template-columns: 50% 50%;
+      grid-gap: 2%;
+      grid-template-rows: 20%;
+    }
+    /* Place items on the grid */
+    .header {
+      grid-column: 1 / span 2;
+      margin-right: 20px;
+  
+    }
+    .right {
+        grid-row-end: span 5;
+        text-align: center
+    }
+    }
+    .content {
+      grid-column: 2;
+      grid-row-end: span 5;
+      color:white;
+      font-family:Arial, Helvetica, sans-serif;
+      text-align: left;
+      box-shadow: #111;
+    }
+  /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 200px;
+    border: 1px solid #f1f1f1;
+    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  }
+  
+  /* This container is needed to position the front and back side */
+  .flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+  
+  /* Do an horizontal flip when you move the mouse over the flip box container */
+  .flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+  }
+  
+  /* Position the front and back side */
+  .flip-card-front, .flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden; /* Safari */
+    backface-visibility: hidden;
+  }
+  
+  /* Style the front side (fallback if image is missing) */
+  .flip-card-front {
+    background-color: #bbb;
+    color: black;
+  }
+  
+  /* Style the back side */
+  .flip-card-back {
+    background-color: dodgerblue;
+    color: white;
+    transform: rotateY(180deg);
+  }
+  

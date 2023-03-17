@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 165.56 165.56">
+  <defs>
+    <style>
+      .cls-1, .cls-2, .cls-3 {
+        fill: #e8d419;
+      }
+
+      .cls-2 {
+        opacity: .25;
+      }
+
+      .cls-3 {
+        opacity: .42;
+      }
+    </style>
+  </defs>
+  <g id="intro_page" data-name="intro page">
+    <g>
+      <circle class="cls-1" cx="82.78" cy="82.78" r="48.28"/>
+      <circle class="cls-3" cx="82.78" cy="82.78" r="64.8"/>
+      <circle class="cls-2" cx="82.78" cy="82.78" r="82.78"/>
+    </g>
+  </g>
+</svg>

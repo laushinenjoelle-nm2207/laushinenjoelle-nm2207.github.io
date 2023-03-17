@@ -1,0 +1,48 @@
+body {
+    height:100%;
+    width:100%;
+    background-image: url("resources/bg.png");
+    color: aliceblue;
+    overflow: hidden;
+    background-size:cover;
+  }
+
+  #panny{
+    height:225px;
+    width: 282px;
+    position:relative;
+    top:200px;
+    left:100px;
+    background-image:url("resources/adventurePanny.svg");
+    background-size:cover;
+}
+
+#sun{
+    height:100px;
+    width: 100px;
+    position:relative;
+    left:900px;
+    bottom:350px;
+    background-image:url("resources/sun.svg");
+    background-size:cover;
+}
+
+h3{
+  font-size: 15px;
+  margin-left: 30px;
+}
+
+h1{
+  font-size: 30px;
+  margin-left: 30px;
+}
+
+h2{
+  font-size: 20px;
+  margin-left: 30px;
+  margin-top: 60px;
+}
+
+button{
+  margin-left: 30px;
+}
