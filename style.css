@@ -17,6 +17,11 @@ body {
     background-size:cover;
 }
 
+p{
+  text-align: right;
+  margin-right: 50px;
+}
+
 #sun{
     height:100px;
     width: 100px;
