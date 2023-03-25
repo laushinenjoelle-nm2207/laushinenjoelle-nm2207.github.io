@@ -8,28 +8,154 @@ body {
   }
 
   #panny{
-    height:225px;
-    width: 282px;
+    height:150px;
+    width: 150px;
     position:relative;
     top:200px;
     left:100px;
     background-image:url("resources/adventurePanny.svg");
-    background-size:cover;
+    background-size:contain;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 p{
+  bottom: 200px;
+  position:relative;
   text-align: right;
   margin-right: 50px;
 }
 
-#sun{
+button {
+  display: inline-block;
+  padding: 10px 50px;
+  font-size: 14px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: #434748;
+  background-color: white;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 3px #999;
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  text-decoration: none;
+}
+
+a:link{
+  color: #434748;
+  text-decoration: none;
+  font-weight: 400;
+}
+a:visited{
+  color:#434748;
+  text-decoration: none;
+  font-weight: 400;
+}
+
+button:hover {
+  background-color:#ffc60c;
+  color: black;}
+
+button:active {
+  background-color: white;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.input{
+  color:#434748;
+}
+
+#cloud{
     height:100px;
     width: 100px;
     position:relative;
     left:900px;
-    bottom:350px;
-    background-image:url("resources/sun.svg");
-    background-size:cover;
+    bottom:250px;
+    background-image:url("resources/cloud.svg");
+    background-size:contain;
+    background-repeat: no-repeat;
+    animation: cloud 8s infinite;
+    opacity:50%
+}
+
+@keyframes cloud {
+  0%{left: 900px;}
+  100%{left :-110px;}
+}
+
+
+
+#cloud2{
+  height:100px;
+  width: 100px;
+  position:relative;
+  left:900px;
+  bottom:400px;
+  background-image:url("resources/cloud.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  animation: cloud2 15s infinite;
+  opacity:50%
+}
+
+@keyframes cloud2 {
+  0%{left: 900;}
+  100%{left :-110px;}
+}
+
+#cloud3{
+  height:100px;
+  width: 100px;
+  position:relative;
+  left:900px;
+  bottom:300px;
+  background-image:url("resources/cloud.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  animation: cloud2 40s infinite;
+  opacity:50%
+}
+
+@keyframes cloud3 {
+  0%{left: 900;}
+  100%{left :-110px;}
+}
+
+#tree{
+  height:100px;
+  width: 100px;
+  position:relative;
+  left:200px;
+  bottom:300px;
+  background-image:url("resources/tree.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  animation: cloud2 10s infinite;
+}
+
+@keyframes tree {
+  0%{left: 200px;}
+  100%{left :-100px;}
+}
+
+#tree2{
+  height:100px;
+  width: 100px;
+  position:relative;
+  left:600px;
+  bottom:300px;
+  background-image:url("resources/tree.svg");
+  background-size:contain;
+  background-repeat: no-repeat;
+  animation: cloud2 9s infinite;
+}
+
+@keyframes tree2 {
+  0%{left: 600px;}
+  100%{left :200px;}
 }
 
 h3{

@@ -1,4 +1,18 @@
+
+function clicker(){
+     document.getElementById("introduction").innerHTML="Type 2 diabetes is a condition that happens because of a problem in the way the body regulates and uses glucose which is a sugar our bodies use as fuel. It occurs when the pancreas does not produce enough insulin — a hormone that regulates the movement of sugar into the cells. And the cells respond poorly to insulin and take in less sugar."
+}
+
+
+
+
 const labelYear= [21998, 2004, 2010];
+const values = [9,8.2,11.3];
+    const averages = [];
+    for(let i = 0; i < values.length; i++) {
+        averages[i] = values.slice(0,i+1).reduce((a,b)=>a+b,0)/(i+1);
+    }
+
 
 const dataObj = {
     labels: labelYear,           
@@ -14,12 +28,13 @@ const dataObj = {
             label: "Female",
             data: [9.6, 7.6, 10.4],
             borderWidth: 2,
-            backgroundColor: "hsla(60,23%,91%, 0.7)",
+            backgroundColor: "#eee4e9",
             borderColor: "rgb(238,238,228)"
         }
     ]
 };
 new Chart("diabetesTrend",
+
             {
                 type: "bar",
                 data: dataObj,
@@ -30,7 +45,7 @@ new Chart("diabetesTrend",
                     },
                     title: {
                         display: true,
-                        text: ["Diabetes trend"],
+                        text: ["Crude Rate of Diabetes in Singapore Over The Years"],
                         fontFamily: "TrebuchetMS",
                         fontSize: 24,
                         fontColor: "rgb(238,238,228)"
@@ -42,3 +57,4 @@ new Chart("diabetesTrend",
                     }
                 }
             });
+

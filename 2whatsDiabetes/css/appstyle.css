@@ -1,19 +1,69 @@
-html, body {
-    height:100%;
-    width:100%;
-    background-color: #70CCD8;
-    color: aliceblue;
+body{
+background-color: #70CCD8;
+}
+h1{
+  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  color: white;
+}
+
+p{
+  color: #434748;
+}
+  button {
+    display: inline-block;
+    padding: 10px 50px;
+    font-size: 20px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    color: #fff;
+    background-color: white;
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 3px #999;
+    font-family: 'Courier New', Courier, monospace;
+    text-decoration: none;
+    
   }
+  a:link{
+    color: #434748;
+    text-decoration: none;
+  }
+  a:visited{
+    color:#434748;
+    text-decoration: none;
+  }
+  
+  button:hover {
+    background-color:#ffc60c }
+  
+  button:active {
+    background-color: white;
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+  }
+  
+
+p{
+  font-size: 14px;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height:1.35 ;
+}
   
 div{
     text-align: right;
 }
 
+h1{
+  font-size: 30px;
+}
 
   .header{
-    font-size: 40px;
+    font-size: 30px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 20px;
   }
 
  
@@ -42,11 +92,14 @@ div{
   /* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
   .content {
     min-height: 40%;
-    overflow-y: scroll;
+    overflow:scroll;
     margin-right: 20px;
     background-color: aliceblue;
     border-radius: 10px;
-
+    text-align: center;
+    contain: content;
+    padding-top:0px;
+    
   }
   
   /* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
@@ -60,14 +113,14 @@ div{
     .container > * {
       margin-bottom: 0;
       border-radius: 10px;
-     /*border:2px #111 solid;*/
+      
     }
     /* Define the grid */
     .container {
       display:grid;
       grid-template-columns: 50% 50%;
-      grid-gap: 2%;
-      grid-template-rows: 20%;
+      grid-gap: 4%;
+      grid-template-rows: 10%;
     }
     /* Place items on the grid */
     .header {
@@ -97,6 +150,13 @@ div{
         grid-column: 1/ span 2;
     }
   
+  }
+
+  #find{
+    width:300px;
+    height:100px;
+    text-align:center;
+    color: #fff;
   }
   
   

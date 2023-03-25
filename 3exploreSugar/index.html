@@ -8,18 +8,35 @@
         <title>intro</title>
     </head>
 <body>
-    <div>
-    <h1>Let's explore the hidden sugars</h1>
-    <button><a href="../4fixDiabetes/index.html">Next Page</a></button> 
-      <button onclick= "kaya()">click me</button>
-      <br><br>
+    <h1>Sneak Attack by Danny the Diabetes Monster!</h1>
+    <h2>Let's explore the hidden sugars in:</h2>
+    <div class="button">
+        <img src="resources/kayaButton.svg" onclick="changeImage()+ changeText()" id="kayaButton" />
+        <img src="resources/noodleButton.svg" onclick="changeImage2() + changeText2()" id="noodleButton" />
+        <img src="resources/bbtButton.svg" onclick="changeImage3()+changeText3()" id="bbtButton" />
+    </div>
+        
+
+    <img src="resources/bbt.svg" id="bbt" width="100" height="100">
+    <div id="food" ></div>
+    <div id="diabetes"></div>
+    <div id="panny"></div>
+    <div id="next"><button><a href="../4fixDiabetes/index.html">Next Page</a></button></div> 
+    
+    <div id="text"><p>Did you know? A medium-sized 500ml bubble milk tea with pearls
+        and the full amount of sugar has 8 teaspoons of sugar! 
+        So be careful when getting your daily bubble tea fix! <b>(will be replaced by images and a shorter copy)</b> </p></div>
+ 
+     <div id="context"><p>A high sugar intake contributes to an increased risk of Type 2 diabetes due to the links between high sugar intake and obesity. There are hidden sugars in almost everything we eat. Let's explore the hidden sugars in some of our favourite</p></div>
+ 
+    
+    <!--
     <div id="bbtButton"></div>
-     <div id="kayaButton"></div>
-   
-    </div>
-    <div>
+    <div id="kayaButton"></div>
+ <div id="food"></div>
+  
     <div id="food"></div>
-    </div>
+-->
 </body>
 
 </html>
