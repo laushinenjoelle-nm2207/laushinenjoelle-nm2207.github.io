@@ -1,29 +1,200 @@
 body{
-background-color: #70CCD8;
-}
-h1{
-  font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  color: white;
+  background-color: #6fccd7;
+  
 }
 
-p{
-  color: #434748;
-}
+  h1{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+    color: white;
+    text-align: center;
+    padding-top: 20px;
+  }
+  h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 20px;
+    color: white;
+    text-align: center;
+  }
+
+  #instruction{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 14px;
+    color: white;
+    position: relative;
+    left:90px;
+    top:-45px;
+  }
+
+  #canvas-container{
+    padding-left: 100px;
+    padding-top:30px;
+    width: 520px;
+    height: 350px;
+
+  }
+
+  .envelope {
+    top:180px;
+    left:600px;
+    position: relative;
+    cursor: pointer;
+  }
+
+  .back {
+    position: relative;
+    width:450px;
+    height: 200px;
+    background-color: #a6784c;
+  }
+  
+  .letter {
+    position: absolute;
+    background-color: #fff;
+    width:420px;
+    height:290px;
+    top:110px;
+    left:20px;
+    transition: .2s;
+  }
+  
+  /*
+  @keyframes letter-animation{
+    100%:{top:110px} 
+    0%:{top:220px}
+  }
+
+  /*
+  .letter:before {
+    position: absolute;
+    content:"";
+    background-color: #333;
+    width: 180px;
+    height: 180px;
+    top:375px;
+    left:175px;
+  }
+  
+  .letter:after {
+    position: absolute;
+    content:"";
+    width:130px;
+    height:130px;
+    background-color: #fff;
+    top:382px;
+    left: 182px;
+    box-shadow: 36px 0 #fff, 36px 36px #fff, 0px 36px #fff;
+  }
+  */
+  
+  .text {
+    font-size: 17px;
+    font-family: arial;
+    margin:20px;
+    line-height: 1.3;
+    text-align: left;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+
+  
+
+  
+  .text:before {
+    left:108px;
+    transform: rotate(-25deg);
+  }
+  
+  .text:after {
+    left:118px;
+    transform: rotate(25deg);
+  }
+  
+  .front {
+    position: absolute;
+    border-right: 230px solid #b28962;
+    border-top: 200px solid transparent;
+    border-bottom: 200px solid transparent;
+    height:0;
+    width:0;
+    top:0;
+    left:220px;
+    z-index:3;
+  }
+  
+  .front:before {
+    content:"";
+    position: absolute;
+    border-left: 230px solid #b28962;
+    border-top: 200px solid transparent ;
+    border-bottom: 200px solid transparent;
+    height:0;
+    width:0;
+    top:-200px;
+    left:-220px;
+  }
+  
+  .front:after {
+    content:"";
+    position: absolute;
+    border-bottom: 205px solid  #a6784c;
+    border-left: 225px solid transparent;
+    border-right:225px solid transparent;
+    height:0;
+    width:0;
+    top:-5px;
+    left:-220px;
+  }
+  
+  .top {
+    position: absolute;
+    border-top: 205px solid  #c19b77;
+    border-left: 225px solid transparent;
+    border-right:225px solid transparent;
+    height:0;
+    width:0;
+    top:0;
+    transform-origin: top;
+    transition: .4s;
+  }
+
+  .envelope:hover .top {
+    transform: rotateX(160deg);
+  }
+  
+  .envelope:hover .letter {
+    transform: translateY(-270px);
+    z-index:2;
+  }
+
+  #panny{
+    left:100px;
+    position: relative;
+  }
+
+  #pannyShocked{
+    left: 700px;
+    position:relative;
+    top:-380px;
+  }
+ 
   button {
     display: inline-block;
     padding: 10px 50px;
     font-size: 20px;
     cursor: pointer;
-    text-align: center;
+    text-align: right;
     text-decoration: none;
     outline: none;
-    color: #fff;
+    color:black;
     background-color: white;
     border: none;
     border-radius: 15px;
     box-shadow: 0 3px #999;
-    font-family: 'Courier New', Courier, monospace;
+    font-family:'Trebuchet MS';
     text-decoration: none;
+    position: relative;
+    top:-300px;
+    left:400px;
     
   }
   a:link{
@@ -43,121 +214,3 @@ p{
     box-shadow: 0 5px #666;
     transform: translateY(4px);
   }
-  
-
-p{
-  font-size: 14px;
-  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  line-height:1.35 ;
-}
-  
-div{
-    text-align: right;
-}
-
-h1{
-  font-size: 30px;
-}
-
-  .header{
-    font-size: 30px;
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-    margin-bottom: 20px;
-  }
-
- 
-  /* Sections of Layout
-  -------------------------------------- */
-  .main {
-    color:red
-  }
-  
-  /* Generic styles for demo purposes
-  -------------------------------------- */
-  .container {
-    font-family: Helvetica, Arial, sans-serif;
-    height:98%;
-    width:98%;
-    border-color: #111;
-    border-width: 2px;
-  }
-  
-  .container > * {
-    background-color: none;
-    padding: 20px;
-    border-color: #111;
-  }
-  
-  /* Typically, you wouldn't specify a height or min-height on this, instead allowing your actual content (i.e., text, images, etc.) to dictate the height of your content area. But since this example has very minimal content, I've set a min-height to mimic a taller content area. */
-  .content {
-    min-height: 40%;
-    overflow:scroll;
-    margin-right: 20px;
-    background-color: aliceblue;
-    border-radius: 10px;
-    text-align: center;
-    contain: content;
-    padding-top:0px;
-    
-  }
-  
-  /* Layout is stacked vertically by default (for narrower viewports), so give some breathing room between the sections. */
-  /* Select all elements where parent is a container */
-  .container > * {
-    margin-bottom: 2%;
-  }
-  
-  /* Now let's apply grid for wider viewports. */
-  @media screen and (min-width: 40em) {
-    .container > * {
-      margin-bottom: 0;
-      border-radius: 10px;
-      
-    }
-    /* Define the grid */
-    .container {
-      display:grid;
-      grid-template-columns: 50% 50%;
-      grid-gap: 4%;
-      grid-template-rows: 10%;
-    }
-    /* Place items on the grid */
-    .header {
-      grid-column: 1 / span 2;
-      margin-right: 20px;
-  
-    }
-    .right {
-        grid-row-end: span 5;
-        text-align: center
-    }
-
-    .sidebar{
-        grid-row-end: span 4;
-        text-align: center;
-        margin-right: 20px;
-    }
-    .content {
-      grid-column: 2;
-      color:#70CCD8;
-      font-family:Arial, Helvetica, sans-serif;
-      text-align: left;
-      box-shadow: #111;
-    }
-
-    .footer {
-        grid-column: 1/ span 2;
-    }
-  
-  }
-
-  #find{
-    width:300px;
-    height:100px;
-    text-align:center;
-    color: #fff;
-  }
-  
-  
-  

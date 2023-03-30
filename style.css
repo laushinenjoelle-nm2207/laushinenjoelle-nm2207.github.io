@@ -1,4 +1,4 @@
-body {
+html {
     height:100%;
     width:100%;
     background-image: url("resources/bg.png");
@@ -177,3 +177,4 @@ h2{
 button{
   margin-left: 30px;
 }
+

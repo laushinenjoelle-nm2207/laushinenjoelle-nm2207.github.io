@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <meta charset="UTF-8">
 
-<html>
+<html> 
     <head>
         <link rel="stylesheet" type="text/css" href="css/appstyle.css">
         <title>what is diabetes</title>
@@ -9,39 +9,33 @@
         <script defer type="text/javascript" src="appscript/main.js">
             </script>
     </head>
+<centre>
+    <h1>A letter for Panny has arrived...</h1>
+    <h2><i>hover on letter to read!</i></h2>
 
-  <body>
+    <body>
     
-    <div class="container">
-      <header class="header">
-        <h1>BUT FIRST... What is Type II Diabetes?</h1>
-      </header>
-
-      <nav class="right">
-        <br><br>
-       
-       <img src="resources/confusedPanny.svg" alt="confusedPanny" onclick=clicker() width=300px height=300px>
-        <p id="find">click on panny to find out more!</p>
-      </nav>
-
-      <article class="content">
-      <p id="introduction"></p>
-    
-      </article>
-
-
-      <aside class="sidebar">
-        <div id="canvas-container">
-            <canvas id="diabetesTrend" width="200" height="200"></canvas><br>
-            <div><button><a href="../3exploreSugar/index.html"> Next Page </a></button></div>
+    <div class="envelope">
+        <div class="back">
+        <div class="letter">
+          <div class="text">Dear Brave Adventurer
+            <br><p id="textContent">A plague of Type II diabetes is coming upon this land. Poor lifestyle choices have invited the diabetes monster lurks around. As a result, the body is producing insufficent insulin, imbalancing the blood sugar levels. It's up to you to defeat and keep the diabetes monster at bay!</p>
           </div>
-      </aside>
-
-      <footer class="footer">
-      </footer>
+        </div>
+        <div class="front"></div>
+        <div class="top"></div>
     </div>
-  
+    </div>
 
-  </body>
+  <img src="resources/Panny.svg" id="panny" width="350px" height="400px" >
+
+  <p id="instruction">Pssst...scroll down to see the crude rate of diabetes 
+    <br>in Singapore over the years ↓ </p>
+  <div id="canvas-container">
+    <canvas id="diabetesTrend" width="200" height="200"></canvas><br>
+  </div>
+ <img src="resources/shocked.svg" id="pannyShocked" width="350px" height="400px">
+<a href="../3exploreSugar/index.html"><button> Next Page</button></a>
+</body>
+
 </html>
-

@@ -33,11 +33,26 @@ function checkScore() {
     }   
 }
 
+function levelClear() {
+    finalScore= score.innerHTML;
+    console.log(finalScore);
+    if (finalScore>300){
+        //so that reload will go back to the starting page 
+        alert("you got a score of: "+ score.innerText + ". Level Cleared!");
+        window.location.replace("index_end.html") 
+}
+}
+
 //main game loop
 setInterval(() => {
     sugar.classList.add('sugar-animation');
+    //power.classList.add('power-animation');
     //score increases w time of player survival
     score.innerText++;
+    console.log(score.innerText);
+    if (score.innerText>300){
+        levelClear();
+    }
     //calculating the position of the pancreas and position of the sugar 
     const pancreasTop = parseInt(window.getComputedStyle(pancreas)
     .getPropertyValue('top'));
@@ -51,7 +66,7 @@ setInterval(() => {
         sugar.style.display = ''
     }
     //runs the checkscore function when game ends aka when pancreas hits sugar 
-    if(sugarLeft < 70 && sugarLeft >0 && pancreasTop>145 ){
+    if(sugarLeft < 100 && sugarLeft >0 && pancreasTop> 180 ){
         checkScore();}
     
 },50);

@@ -7,6 +7,7 @@ h1{
     color: white;
     text-align:right;
     margin-right: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h3{
@@ -16,6 +17,7 @@ h3{
     color: white;
     margin-top: 100px;
     margin-right: 470px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 h2{
@@ -24,6 +26,7 @@ h2{
     font-size: 18px;
     color: white;
     margin-right: 82px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 #back{
