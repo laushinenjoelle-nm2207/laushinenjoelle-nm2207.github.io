@@ -21,7 +21,7 @@ document.addEventListener('keypress', (e)=> {
 function checkScore() { 
     finalScore= score.innerHTML;
     console.log(finalScore);
-    if (finalScore>0 && finalScore<200){
+    if (finalScore>0 && finalScore<100){
         //so that reload will go back to the starting page 
         alert("you got a score of: "+ score.innerText + ". Play again!");
         window.location.replace("index_start.html");
@@ -29,7 +29,7 @@ function checkScore() {
     else {
         //so that reload will go to the ending page 
         alert("you got a score of: "+ score.innerText + ". Good Job! You did well!");
-        window.location.replace("index_end.html");
+        window.location.replace("../4fixDiabetes/index.html");
     }   
 }
 
@@ -39,7 +39,7 @@ function levelClear() {
     if (finalScore>300){
         //so that reload will go back to the starting page 
         alert("you got a score of: "+ score.innerText + ". Level Cleared!");
-        window.location.replace("index_end.html") 
+        window.location.replace("../4fixDiabetes/index.html") 
 }
 }
 

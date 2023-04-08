@@ -1,7 +1,8 @@
 function promptMe(){
-    var nameInput= prompt("input name here");
-    document.getElementById("name").innerHTML= "Welcome " + nameInput +" to"
+    var nameInput= prompt("Panny: Hi there! What's your name?");
+    alert("Hi " + nameInput + "! It's nice meeting you. Thanks for coming along on this adventure with me!")
 }
+
 
 
 

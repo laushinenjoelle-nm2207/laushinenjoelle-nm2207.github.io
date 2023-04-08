@@ -32,9 +32,9 @@ body{
     width:600px;
     height:300px;
     border:none;
-    margin:auto;
     background-image:url("SVG/bg.png");
     background-size:contain;
+    margin-left: 400px;
 }
 
 #pancreas{
@@ -71,7 +71,7 @@ body{
 #danny{
     position: relative;
     top: -60px;
-    left: 590px;
+    right:300px;
 }
 
 /*
@@ -106,5 +106,6 @@ body{
     0%{top:200px;}
     50%{top:50px;}
     75%{top:50px;}
+    80%{top:50px;}
     100%{top:200px;}
 }

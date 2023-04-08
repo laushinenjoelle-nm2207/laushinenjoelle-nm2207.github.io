@@ -28,11 +28,21 @@ function changeImage3() {
 
 function changeText(){
     var image = document.getElementById('text');
+    if (image.src.match("resources/kayaText.svg")) {
+        image.src = "resources/bbtText.svg";
+    }
+    else {
         image.src = "resources/kayaText.svg";
+    }
 }
 function changeText2(){
     var image = document.getElementById('text');
+    if (image.src.match("resources/noodleText.svg")) {
+        image.src = "resources/bbtText.svg";
+    }
+    else {
         image.src = "resources/noodleText.svg";
+    }  
 }
 
 function changeText3(){

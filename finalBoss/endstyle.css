@@ -1,0 +1,54 @@
+body{
+    background-color: rgba(111,204,215,255);
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    text-align:right;
+    margin-right: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+    text-align:right;
+    left:200px;
+    font-size: 30px;
+    color: white;
+    margin-top: 100px;
+    margin-right: 470px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    text-align:right;
+    left:200px;
+    font-size: 18px;
+    color: white;
+    margin-right: 82px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#back{
+    text-align:right;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+button{
+    border-radius: 6px;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    box-shadow: aliceblue;
+    padding: 8px 30px;
+    text-align: right;
+}
+
+
+#panny{
+    height:400px;
+    width:650px;
+    background-image: url("SVG/happyPanny.svg") ;
+    background-size:contain;
+    bottom: 0;
+}

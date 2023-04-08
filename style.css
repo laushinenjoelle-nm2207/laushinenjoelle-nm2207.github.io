@@ -5,6 +5,8 @@ html {
     color: aliceblue;
     overflow: hidden;
     background-size:cover;
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   }
 
   #panny{
@@ -12,7 +14,7 @@ html {
     width: 150px;
     position:relative;
     top:200px;
-    left:100px;
+    left:200px;
     background-image:url("resources/adventurePanny.svg");
     background-size:contain;
     background-repeat: no-repeat;
@@ -22,16 +24,15 @@ html {
 p{
   bottom: 200px;
   position:relative;
-  text-align: right;
   margin-right: 50px;
 }
 
 button {
+  text-align: center;
   display: inline-block;
   padding: 10px 50px;
   font-size: 14px;
   cursor: pointer;
-  text-align: center;
   text-decoration: none;
   outline: none;
   color: #434748;
@@ -73,7 +74,7 @@ button:active {
     width: 100px;
     position:relative;
     left:900px;
-    bottom:250px;
+    bottom:350px;
     background-image:url("resources/cloud.svg");
     background-size:contain;
     background-repeat: no-repeat;
@@ -93,7 +94,7 @@ button:active {
   width: 100px;
   position:relative;
   left:900px;
-  bottom:400px;
+  bottom:500px;
   background-image:url("resources/cloud.svg");
   background-size:contain;
   background-repeat: no-repeat;
@@ -111,7 +112,7 @@ button:active {
   width: 100px;
   position:relative;
   left:900px;
-  bottom:300px;
+  bottom:400px;
   background-image:url("resources/cloud.svg");
   background-size:contain;
   background-repeat: no-repeat;
@@ -159,22 +160,31 @@ button:active {
 }
 
 h3{
-  font-size: 15px;
+  font-size: 18px;
   margin-left: 30px;
 }
 
 h1{
-  font-size: 30px;
+  font-size: 33px;
   margin-left: 30px;
 }
 
 h2{
-  font-size: 20px;
+  font-size: 23px;
   margin-left: 30px;
   margin-top: 60px;
 }
 
 button{
-  margin-left: 30px;
+  margin-left:200px;
 }
 
+#convo{
+  position: relative;
+  top:300px;
+  left:-300px;
+}
+
+#resources{
+  text-align: right;
+}

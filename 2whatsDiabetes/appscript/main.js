@@ -41,7 +41,7 @@ new Chart("diabetesTrend",
                 options: { 
                     maintainAspectRatio: false,
                     legend: {
-                        display: false
+                        display: true
                     },
                     title: {
                         display: true,
@@ -58,3 +58,42 @@ new Chart("diabetesTrend",
                 }
             });
 
+            const dataObj2 = {
+                labels: labelYear,           
+                datasets: [
+                    {
+                        label: "Average",
+                        data: [9.05, 8.25, 11.35],
+                        borderWidth: 2,
+                        backgroundColor: "hsla(60,23%,91%, 0.7)",
+                        borderColor: "rgb(238,238,228)"
+                    },
+                ]
+            };
+            new Chart("diabetesTrend2",
+            
+                        {
+                            type: "line",
+                            data: dataObj2,
+                            options: { 
+                                maintainAspectRatio: false,
+                                legend: {
+                                    display: false
+                                },
+                                title: {
+                                    display: true,
+                                    text: ["Crude Rate of Diabetes in Singapore Over The Years"],
+                                    fontFamily: "TrebuchetMS",
+                                    fontSize: 24,
+                                    fontColor: "rgb(238,238,228)"
+                                },
+                                
+                                gridLines:{
+                                    display:true,
+                                    color: "rgb(238,238,228)"
+                                }
+                            }
+                        });
+            
+
+                

@@ -31,7 +31,7 @@ h2{
 
 h3{
     text-align:center;
-    font-size: 12px;
+    font-size: 14px;
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
@@ -48,9 +48,15 @@ body{
     margin:auto;
     background-image:url("SVG/bg.png");
     background-size:contain;
-    margin-top: -53px;
+    margin-top: -113px;
+    margin-left:400px;
 }
 
+#danny{
+    position: relative;
+    top: -60px;
+    right:300px;
+}
 #pancreas{
     height:75px;
     width: 90px;
