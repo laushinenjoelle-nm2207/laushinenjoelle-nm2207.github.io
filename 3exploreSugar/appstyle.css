@@ -40,7 +40,7 @@ body{
 }
 
 #text{
-    top:-300px;
+    top:-320px;
     left:430px;
     position:relative;
 
@@ -61,7 +61,7 @@ p{
     width:100x;
     height:200px;
     position:relative;
-    left: -300px;
+    left: -340px;
     bottom:250px;
     background-image: url("resources/diabetes.svg");
     background-size: contain;
@@ -111,7 +111,7 @@ img{
     background-image: url("resources/boom.svg");
     background-repeat: no-repeat;
     background-size:contain;
-    top:70px;
+    top:60px;
     left:550px;
 }
 
@@ -127,7 +127,7 @@ button {
     text-align: center;
     text-decoration: none;
     outline: none;
-    color: black
+    color: black;
     background-color: white;
     border: none;
     border-radius: 5px;

@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 523.76 633.86">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke-width: 12px;
+      }
+
+      .cls-1, .cls-2, .cls-3, .cls-4 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-1, .cls-3, .cls-4 {
+        fill: none;
+      }
+
+      .cls-1, .cls-4 {
+        stroke: #231f20;
+      }
+
+      .cls-5 {
+        fill: #e93227;
+      }
+
+      .cls-6 {
+        fill: #4058a7;
+      }
+
+      .cls-7, .cls-2 {
+        fill: #45439b;
+      }
+
+      .cls-2 {
+        stroke-width: 11px;
+      }
+
+      .cls-2, .cls-3 {
+        stroke: #45439b;
+      }
+
+      .cls-3 {
+        stroke-width: 20px;
+      }
+
+      .cls-4 {
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="evil_diabetes" data-name="evil diabetes">
+    <g>
+      <line class="cls-3" x1="84.92" y1="380.56" x2="15.21" y2="376.59"/>
+      <path class="cls-7" d="m8.43,351.05c7.92.45,13.87,9.02,13.29,19.15-.58,10.13-7.46,17.97-15.38,17.52"/>
+      <line class="cls-3" x1="79.72" y1="472.14" x2="10" y2="468.18"/>
+      <path class="cls-7" d="m3.22,442.64c7.92.45,13.87,9.02,13.29,19.15-.58,10.13-7.46,17.97-15.38,17.52"/>
+    </g>
+    <rect class="cls-6" x="62.86" y="228.72" width="460.94" height="403.5" rx="201.75" ry="201.75" transform="translate(561.75 876.9) rotate(-176.75)"/>
+    <line class="cls-1" x1="405.34" y1="331.09" x2="362.91" y2="376.64"/>
+    <line class="cls-1" x1="393.89" y1="540.03" x2="365.79" y2="485.05"/>
+    <line class="cls-3" x1="287.36" y1="250.69" x2="274.66" y2="182.02"/>
+    <line class="cls-3" x1="244.01" y1="575.63" x2="213.37" y2="512.88"/>
+    <circle class="cls-2" cx="214.48" cy="513.84" r="10.73"/>
+    <polyline class="cls-4" points="314.58 395.08 326.7 409.63 312.9 424.56 325.12 437.27 311.33 452.2"/>
+    <line class="cls-1" x1="361.76" y1="332.21" x2="406.49" y2="375.52"/>
+    <line class="cls-1" x1="350.78" y1="526.43" x2="408.91" y2="498.65"/>
+    <rect class="cls-5" x="214.48" y="0" width="47.71" height="31.76" rx="15.88" ry="15.88"/>
+  </g>
+</svg>

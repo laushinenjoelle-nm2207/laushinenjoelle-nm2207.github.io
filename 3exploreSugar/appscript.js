@@ -1,6 +1,7 @@
 //declare kaya button
 var kayaButton= document.getElementById("kayaButton");
 
+//function changeImage() changes the image of the food in the food div. It uses bbt.svg as the original image 
 function changeImage() {
     var image = document.getElementById('bbt');
     if (image.src.match("resources/kaya.svg")) {
@@ -26,6 +27,7 @@ function changeImage3() {
         image.src = "resources/bbt.svg";
 }
 
+//changeText changes the accompanying textbox under the food 
 function changeText(){
     var image = document.getElementById('text');
     if (image.src.match("resources/kayaText.svg")) {
@@ -49,12 +51,6 @@ function changeText3(){
     var image = document.getElementById('text');
         image.src = "resources/bbtText.svg";
 }
-
-//function should replace the background image of the food box to kaya when the button is clicked 
-/*function kaya(){
-    console.log("it works");
-    food.style.background=url('resources/kaya.svg');
-};*/
 
 
 

@@ -1,0 +1,51 @@
+html{
+    background-image:url(resources/bg.png) ;
+    text-align: center;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+
+#cannon{
+    position: relative;
+    right:300px;
+    top:300px;
+}
+
+#danny{
+    position: relative;
+    left:350px;
+    bottom:100px;
+}
+
+#power{
+    background-image: url(resources/power.svg);
+    width:80px;
+    height:50px;
+    background-size: contain;
+    background-repeat: none;
+    position:relative;
+    top:140px;
+    left:450px;
+    opacity: 0%;
+}
+
+.power-animation{
+    animation-timing-function: linear;
+    animation: power 1s;
+}
+
+@keyframes power {
+    0%{opacity: 0%;
+        left:450px;}
+    100%{opacity: 100%;
+        left :900px;}
+}
+
+#count{
+    opacity: 0%;
+}
+
+h3{
+    font-size: 18px;
+}

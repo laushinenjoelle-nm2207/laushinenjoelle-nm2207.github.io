@@ -1,0 +1,61 @@
+body{
+    background-color: rgba(111,204,215,255);
+}
+
+h1{
+    font-size: 60px;
+    color: white;
+    text-align:center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+    text-align:center;
+    left:200px;
+    font-size: 30px;
+    color: white;
+    margin-bottom: -25px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h2{
+    text-align:center;
+    left:200px;
+    font-size: 18px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#back{
+    text-align:right;
+    margin-top: 40px;
+    margin-right: 100px;
+}
+
+button{
+    border-radius: 6px;
+    background-color: aliceblue;
+    border-color: aliceblue;
+    box-shadow: aliceblue;
+    padding: 8px 30px;
+    text-align: right;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    position: relative;
+    top:400px;
+}
+p{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: white;
+    text-align: center;
+}
+
+
+#panny{
+    height:400px;
+    width:650px;
+    background-image: url("resources/panny.svg") ;
+    background-size:contain;
+    position: relative;
+    bottom: 20px;
+    left:260px;
+}

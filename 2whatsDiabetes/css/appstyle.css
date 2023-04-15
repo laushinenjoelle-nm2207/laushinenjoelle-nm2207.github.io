@@ -23,7 +23,7 @@ body{
     color: white;
     position: relative;
     text-align: center;
-    top:-20px;
+    top:20px;
   }
 
   #canvas-container{
@@ -35,7 +35,7 @@ body{
   }
 
   .envelope {
-    top:180px;
+    top:230px;
     margin-left:750px;
     position: relative;
     cursor: pointer;
@@ -162,18 +162,19 @@ body{
   }
   
   .envelope:hover .letter {
-    transform: translateY(-270px);
+    transform: translateY(-330px);
     z-index:2;
   }
 
   #panny{
     margin-left:200px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
     position: relative;
+    top:100px;
   }
 
   #pannyShocked{
-    left: 700px;
+    left: 750px;
     position:relative;
     top:-380px;
   }
@@ -193,10 +194,6 @@ body{
     box-shadow: 0 3px #999;
     font-family:'Trebuchet MS';
     text-decoration: none;
-    position: relative;
-    top:-300px;
-    left:400px;
-    
   }
   a:link{
     color: #434748;
@@ -214,4 +211,19 @@ body{
     background-color: white;
     box-shadow: 0 5px #666;
     transform: translateY(4px);
+  }
+
+  #graphButton{
+    text-align: left;
+  }
+
+  #endButton{
+    position: relative;
+    left:850px;
+    top:-50px;
+  }
+
+  #diabetesTrend2{
+    margin-left: 470px;
+    margin-top: -300px;
   }

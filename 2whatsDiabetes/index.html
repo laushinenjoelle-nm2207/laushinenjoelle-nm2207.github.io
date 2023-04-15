@@ -4,22 +4,21 @@
 <html> 
     <head>
         <link rel="stylesheet" type="text/css" href="css/appstyle.css">
-        <title>what is diabetes</title>
+        <title>Panny's Adventure</title>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
         <script defer type="text/javascript" src="appscript/main.js">
             </script>
     </head>
 <centre>
     <h1>A letter for Panny has arrived...</h1>
-    <h2><i>hover on letter to read!</i></h2>
+    <h2><i>hover on the letter to read!</i></h2>
 
     <body>
-    
     <div class="envelope">
         <div class="back">
         <div class="letter">
           <div class="text">Dear Brave Adventurer
-            <br><p id="textContent">A plague of Type II diabetes is coming upon this land. Poor lifestyle choices have invited the diabetes monster lurks around. As a result, the body is producing insufficent insulin, imbalancing the blood sugar levels. It's up to you to defeat and keep the diabetes monster at bay!</p>
+            <br><p id="textContent">A plague of Type II diabetes is coming upon this land. Poor lifestyle choices have invited the diabetes monster lurks around. As a result, the body is producing insufficent insulin, imbalancing the blood sugar levels. It's up to you to keep the diabetes monster at bay! <br> <br> Here's a hint: Go to Powerup valley to collect the powerups and defeat the diabetes monster! </p>
           </div>
         </div>
         <div class="front"></div>
@@ -32,14 +31,18 @@
   <p id="instruction">Pssst...scroll down to see the crude rate of diabetes 
     <br>in Singapore over the years ↓ </p> 
   <div id="canvas-container">
-    <canvas id="diabetesTrend" width="200" height="200"></canvas><br>
-    <!-- <input onclick="chartType('bar')" type="radio" value="bar" name="chart">Bar 
-    <input onclick="chartType('line')" type="radio" value="bar" name="chart">Line
-    <canvas id="diabetesTrend2" width="200" height="200"></canvas><br>-->
-   
-  </div>
- <img src="resources/shocked.svg" id="pannyShocked" width="350px" height="400px">
-<a href="../3exploreSugar/index.html"><button> Next Page</button></a>
+    <canvas id="diabetesTrend" width="250" height="200"></canvas><br>
+    <button onclick="chartType('bar')" id="graphButton">bar chart</button>
+    <button onclick="chartType('line')" id="graphButton">line chart</button><br>
+   <img src="resources/shocked.svg" id="pannyShocked" width="650px" height="300px">
+    
+    <img src="resources/final.png" id="final" width="899px" height="470px">
+  
+  <!--canvas id="diabetesTrend2" width="300px" height="200px"></canvas><br>-->
+  <a href="../walking/index.html" id="endButton"><button>Let's go!</button></a>
+ </div>
+ 
+
 </body>
 
 </html>

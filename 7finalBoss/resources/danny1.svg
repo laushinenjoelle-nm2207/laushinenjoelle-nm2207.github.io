@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 481.6 624.71">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #92c83e;
+      }
+
+      .cls-2 {
+        fill: #231f20;
+      }
+
+      .cls-3 {
+        fill: #4058a7;
+      }
+
+      .cls-4, .cls-5 {
+        fill: #45439b;
+      }
+
+      .cls-5 {
+        stroke-width: 11px;
+      }
+
+      .cls-5, .cls-6 {
+        stroke: #45439b;
+      }
+
+      .cls-5, .cls-6, .cls-7 {
+        stroke-linecap: round;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-6 {
+        stroke-width: 20px;
+      }
+
+      .cls-6, .cls-7 {
+        fill: none;
+      }
+
+      .cls-7 {
+        stroke: #231f20;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+  <g id="evil_diabetes" data-name="evil diabetes">
+    <g>
+      <line class="cls-6" x1="241.85" y1="544.88" x2="241.85" y2="614.71"/>
+      <path class="cls-4" d="m216.73,622.93c0-7.93,8.22-14.36,18.36-14.36s18.36,6.43,18.36,14.36"/>
+      <line class="cls-6" x1="333.58" y1="544.88" x2="333.58" y2="614.71"/>
+      <path class="cls-4" d="m308.46,622.93c0-7.93,8.22-14.36,18.36-14.36s18.36,6.43,18.36,14.36"/>
+    </g>
+    <rect class="cls-3" x="49.38" y="132.23" width="460.94" height="403.5" rx="201.75" ry="201.75" transform="translate(613.83 54.13) rotate(90)"/>
+    <ellipse class="cls-2" cx="348.63" cy="304.91" rx="18.03" ry="29.07"/>
+    <ellipse class="cls-2" cx="206.12" cy="304.91" rx="18.03" ry="29.07"/>
+    <polyline class="cls-7" points="251.24 304.91 265.08 317.83 280.77 304.91 292.77 317.83 308.46 304.91"/>
+    <line class="cls-7" x1="192.18" y1="247.63" x2="224.15" y2="265.16"/>
+    <line class="cls-7" x1="362.58" y1="247.63" x2="330.6" y2="265.16"/>
+    <line class="cls-6" x1="100.69" y1="350.15" x2="32.86" y2="366.72"/>
+    <line class="cls-6" x1="427.58" y1="374.99" x2="366.67" y2="409.13"/>
+    <ellipse class="cls-5" cx="17.21" cy="366.5" rx="12.15" ry="10.73" transform="translate(-205.52 74.93) rotate(-34.69)"/>
+    <circle class="cls-5" cx="367.56" cy="407.98" r="10.73"/>
+    <rect class="cls-1" x="157.29" y="0" width="245.12" height="31.76" rx="15.88" ry="15.88"/>
+  </g>
+</svg>

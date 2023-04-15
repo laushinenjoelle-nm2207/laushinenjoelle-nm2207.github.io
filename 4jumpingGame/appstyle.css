@@ -1,0 +1,120 @@
+#score {
+    text-align:center;
+    margin-top: 100px;
+    font-size: 40px;
+}
+
+div{
+    position:relative;
+    top:18px;
+}
+
+
+h1{
+    margin-top: 21px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h3{
+    text-align:center;
+    font-size: 18px;
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-image: url(SVG/biggerbg.png);
+    background-size:auto;
+}
+
+#game{
+    width:600px;
+    height:300px;
+    border:none;
+    background-image:url("SVG/bg.png");
+    background-size:contain;
+    margin-left: 400px;
+}
+
+#pancreas{
+    height:75px;
+    width: 90px;
+    position:relative;
+    top:200px;
+    left:10px;
+    background-image:url("SVG/running.png");
+    background-size:cover;
+}
+
+#sugar{
+    height: 50px;
+    width: 50px;
+    position: relative;
+    top: 150px;
+    left: 540px;
+    background-image:url("SVG/cube.svg");
+    background-size:cover;
+    background-repeat: none;
+}
+
+.sugar-animation{
+    animation-timing-function: linear;
+    animation: sugar 2s infinite
+}
+
+
+@keyframes sugar {
+    0%{left: 550px;}
+    100%{left :-50px;}
+}
+#danny{
+    position: relative;
+    top: -60px;
+    right:300px;
+    animation: danny 20s 1;
+}
+
+@keyframes danny {
+    0%{right: 300px;}
+    100%{right :1000px;}
+}
+/*
+#power{
+    height: 53px;
+    width: 55px;
+    position: relative;
+    top: 100px;
+    left: 800px;
+    background-image:url("SVG/power.svg");
+    background-size:cover; 
+    background-repeat: none;
+}
+
+.power-animation{
+    animation: power 2.83s infinite;
+}
+
+
+@keyframes power {
+    0%{left: 800px;}
+    50%{left: 425px;}
+    100%{left :-50px;}
+}
+*/
+.jump-animation{
+    animation: jump 0.5s;
+}
+
+/*here is the jump animation, it should hold slightly at the peak and drop down*/
+@keyframes jump{
+    0%{top:200px;
+    left:10px;}
+    50%{top:50px;}
+    75%{top:50px;
+    left:12px}
+    80%{top:50px;
+        left:12px}
+    100%{top:200px;
+    left:12px;}
+}

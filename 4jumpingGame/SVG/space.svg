@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Layer_2" data-name="Layer 2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 189.6 37.5">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        fill: #fff;
+        font-family: TrebuchetMS-Bold, 'Trebuchet MS';
+        font-size: 16px;
+        font-weight: 700;
+      }
+    </style>
+  </defs>
+  <g id="fix_diabetes" data-name="fix diabetes">
+    <g>
+      <rect class="cls-1" x="9.12" y="5.15" width="171.36" height="27.3" rx="4.11" ry="4.11"/>
+      <rect class="cls-1" x=".5" y=".5" width="188.6" height="36.5" rx="3.03" ry="3.03"/>
+      <path class="cls-1" d="m1.57,1.24l8.21,5.64"/>
+      <path class="cls-1" d="m187.45,1.1c-7.06,4.58-7.82,5.64-7.82,5.64"/>
+      <line class="cls-1" x1="10.4" y1="31.32" x2="1.57" y2="36.26"/>
+      <line class="cls-1" x1="179.09" y1="31.38" x2="188.22" y2="36.1"/>
+      <text class="cls-2" transform="translate(20.82 23.84)"><tspan x="0" y="0">press space to jump</tspan></text>
+    </g>
+  </g>
+</svg>

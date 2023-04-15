@@ -1,20 +1,7 @@
+const labelYear= [1998, 2004, 2010];
 
-function clicker(){
-     document.getElementById("introduction").innerHTML="Type 2 diabetes is a condition that happens because of a problem in the way the body regulates and uses glucose which is a sugar our bodies use as fuel. It occurs when the pancreas does not produce enough insulin — a hormone that regulates the movement of sugar into the cells. And the cells respond poorly to insulin and take in less sugar."
-}
-
-
-
-
-const labelYear= [21998, 2004, 2010];
-const values = [9,8.2,11.3];
-    const averages = [];
-    for(let i = 0; i < values.length; i++) {
-        averages[i] = values.slice(0,i+1).reduce((a,b)=>a+b,0)/(i+1);
-    }
-
-
-const dataObj = {
+//data for crude rate of diabetes 
+const data = {
     labels: labelYear,           
     datasets: [
         {
@@ -33,67 +20,69 @@ const dataObj = {
         }
     ]
 };
-new Chart("diabetesTrend",
+//configuring the first graph 
+const config = {
+    type: 'bar',
+    data,
+    options: {
+      scales: {
+        y: {
+          beginAtZero: true
+        },
+      },
+       title: {
+            display: true,
+            text: ["Crude Rate of Diabetes in Singapore Over The Years"],
+            fontFamily: "TrebuchetMS",
+            fontSize: 24,
+            fontColor: "rgb(238,238,228)"
+        },
+    }
+  };
+//rendering 
+  const diabetesTrend = new Chart(
+    document.getElementById('diabetesTrend'),
+    config
+  );
+//creating an update funciton so viewer can change graph type. the type is replaced in the configuration
+function chartType(type){
+   diabetesTrend.config.type = type
+   diabetesTrend.update();
+}
 
-            {
-                type: "bar",
-                data: dataObj,
-                options: { 
-                    maintainAspectRatio: false,
-                    legend: {
-                        display: true
-                    },
-                    title: {
-                        display: true,
-                        text: ["Crude Rate of Diabetes in Singapore Over The Years"],
-                        fontFamily: "TrebuchetMS",
-                        fontSize: 24,
-                        fontColor: "rgb(238,238,228)"
-                    },
-                    
-                    gridLines:{
-                        display:true,
-                        color: "rgb(238,238,228)"
-                    }
-                }
-            });
+//data for pie chart
+const data2 = {
+    labels: [
+    'Type I',
+      'Type II',
+    ],
+    datasets: [{
+      label: 'My First Dataset',
+      data: [90,10],
+      backgroundColor: [
 
-            const dataObj2 = {
-                labels: labelYear,           
-                datasets: [
-                    {
-                        label: "Average",
-                        data: [9.05, 8.25, 11.35],
-                        borderWidth: 2,
-                        backgroundColor: "hsla(60,23%,91%, 0.7)",
-                        borderColor: "rgb(238,238,228)"
-                    },
-                ]
-            };
-            new Chart("diabetesTrend2",
-            
-                        {
-                            type: "line",
-                            data: dataObj2,
-                            options: { 
-                                maintainAspectRatio: false,
-                                legend: {
-                                    display: false
-                                },
-                                title: {
-                                    display: true,
-                                    text: ["Crude Rate of Diabetes in Singapore Over The Years"],
-                                    fontFamily: "TrebuchetMS",
-                                    fontSize: 24,
-                                    fontColor: "rgb(238,238,228)"
-                                },
-                                
-                                gridLines:{
-                                    display:true,
-                                    color: "rgb(238,238,228)"
-                                }
-                            }
-                        });
-            
+        "#eab676",
+        "#76eab6",
+      ],
+      hoverOffset: 4
+    }],
+  };
 
-                
+  const config2 = {
+    type: 'doughnut',
+    data: data2,
+    options:{
+    title: {
+        display: true,
+        text: ["But what is the most prevalent type of diabetes?"],
+        fontFamily: "TrebuchetMS",
+        fontSize: 24,
+        fontColor: "rgb(238,238,228)"
+    },
+}
+  };
+//rendering pie chart
+  const diabetesTrend2 = new Chart(
+    document.getElementById('diabetesTrend2'),
+    config2
+  );
